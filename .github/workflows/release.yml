@@ -16,6 +16,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Debug1
+        run: pwd
+      - name: Debug2
+        run: ls -la
       - name: Packaging
         run: ./release.sh
         shell: bash
